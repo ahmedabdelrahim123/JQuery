@@ -1,0 +1,26 @@
+*{
+text-transform: capitalize;
+}
+body{
+min-height: 100vh;
+/* background-color: cornflowerblue;
+display: flex;
+align-items: center;
+justify-content: center; */
+}
+.hole{
+  background-color: black;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+.rabit{
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+}

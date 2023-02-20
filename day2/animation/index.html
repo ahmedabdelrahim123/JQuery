@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="style.css"  rel="stylesheet" type="text/css" >
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>animation</title>
+</head>
+
+<body>
+ <div class="hole">
+   <svg >
+      <path id="curve" />
+    </svg>
+    
+ </div>
+
+ <div class="rabit">
+  <img id="image" src="rab.png" style="padding-left: 50px; padding-top: 10px;">
+  <p style="font-size: medium; padding-left: 70px; bottom: 100px;">Drag ME</p>
+
+</div>
+ 
+ <script type="text/javascript" >
+$(function () {
+    $("#image").on("mouseenter",function(){
+        $("#image").effect("shake")
+      })
+      $(".rabit").draggable({})
+      $( ".hole" ).droppable({
+        drop: function() {
+            $( ".rabit").fadeOut("slow");
+          }
+      })
+})
+   </script>   
+</body>
+</html>
